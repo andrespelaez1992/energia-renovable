@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body>
+    <header>
+        <img  id="logo" src="../logo/Campistas.png" width="150px" height="100px" >
+        <h1>DASHBOARD</h1>
+        <nav>
+            <ul>
+                <li><a href="../vistas/index.html">Inicio</a></li>
+                <li><a href="../vistas/energiasolar.html">Energía Solar</a></li>
+                <li><a href="../vistas/energiaeolica.html">Energía Eólica</a></li>
+                <li><a href="../vistas/energiageotermica.html">Energía Geotérmica</a></li>
+                <li><a href="../vistas/calculadora.html">Calculadora</a></li>
+                <li><a href="../vistas/dashboard.html">dashboard</a></li>
+                <li><a href="../vistas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> 
+        <section id="dashboard" class="section">
+         <h2>Dashboard Energía Solar en La Guajira</h2> 
+         <canvas id="energiaSolarChart"></canvas> 
+         <div class="stats"> 
+            <p><strong>Capacidad Instalada Total:</strong> 
+                <span id="capacidadTotal">0</span> MW</p>
+                 <p><strong>Consumo Energético Total:</strong> 
+                    <span id="consumoTotal">0</span> GWh</p> </div> 
+                    <img src="la_guajira.jpg" alt="Imagen de La Guajira" class="image">
+         </section> 
+    </main>
+    
+    
+
+    <footer>
+        <p>&copy; 2024 Energías Renovables</p>
+    </footer>
+    <script src="../java/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="../styles/calculadora.css">
+</head>
+<body>
+    <header>
+        <img  id="logo" src="../logo/Campistas.png" width="150px" height="100px" >
+        <h1>CALCULADORA ENERGETICA</h1>
+        <nav>
+            <ul>
+                <li><a href="../vistas/index.html">Inicio</a></li>
+                <li><a href="../vistas/energiasolar.html">Energía Solar</a></li>
+                <li><a href="../vistas/energiaeolica.html">Energía Eólica</a></li>
+                <li><a href="../vistas/energiageotermica.html">Energía Geotérmica</a></li>
+                <li><a href="../vistas/calculadora.html">Calculadora</a></li>
+                <li><a href="../vistas/dashboard.html">dashboard</a></li>
+                <li><a href="../vistas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+</header> 
+<main> 
+    <section id="calculadora" class="section"> 
+        <h2>Calculadora Energética Avanzada</h2>
+         <p>Calcula tu ahorro energético y la reducción de emisiones de CO2 al usar energías renovables.</p> 
+        <form id="calculadoraForm"> 
+            <label for="energiaNoRenovable">Consumo de Energía No Renovable (kWh):</label>
+             <input type="number" id="energiaNoRenovable" name="energiaNoRenovable" required> 
+             <label for="energiaRenovable">Consumo de Energía Renovable (kWh):</label> 
+             <input type="number" id="energiaRenovable" name="energiaRenovable" required> 
+             <label for="emisionesNoRenovable">Emisiones CO2 Energía No Renovable (kg CO2/kWh):</label> 
+             <input type="number" id="emisionesNoRenovable" name="emisionesNoRenovable" step="0.01" required> 
+             <label for="emisionesRenovable">Emisiones CO2 Energía Renovable (kg CO2/kWh):</label> 
+             <input type="number" id="emisionesRenovable" name="emisionesRenovable" step="0.01" required> 
+             <button type="button" onclick="calcularAhorro()">Calcular Ahorro</button> 
+        </form>
+            <div id="resultado">
+                 <p>Ahorro Energético: <span id="ahorroEnergetico"></span> kWh</p> 
+                 <p>Reducción de Emisiones de CO2: <span id="reduccionCO2"></span> kg</p>
+            </div> 
+     </section>
+ </main>
+
+    <footer>
+        <p>&copy; 2024 Energías Renovables</p>
+    </footer>
+    <script src="../java/calculadora.js"></script>
+</body>
+</html>
